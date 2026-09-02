@@ -16,7 +16,7 @@ const Page=()=>{
       toast.error(error.message);
     },
     onSuccess: (data)=>{
-      router.push('/projects/${data.id}');
+      router.push(`/projects/${data.id}`);
     }
   }));
   return(
