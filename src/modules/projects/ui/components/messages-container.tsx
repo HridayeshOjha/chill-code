@@ -25,15 +25,16 @@ export const MessagesContainer = ({
         refetchInterval: 5000,// tempory live message update
     }));
 
-    useEffect(()=>{
-        const lastAssistantMessageWithFragment = messages.findLast(
-            (message)=>message.role==="ASSISTANT" && !!message.fragment,
-        );
+    // ToDo: causing some error 
+    // useEffect(()=>{
+    //     const lastAssistantMessageWithFragment = messages.findLast(
+    //         (message)=>message.role==="ASSISTANT" && !!message.fragment,
+    //     );
 
-        if(lastAssistantMessageWithFragment){
-            setActiveFragment(lastAssistantMessageWithFragment.fragment);
-        }
-    },[messages, setActiveFragment]);
+    //     if(lastAssistantMessageWithFragment){
+    //         setActiveFragment(lastAssistantMessageWithFragment.fragment);
+    //     }
+    // },[messages, setActiveFragment]);
 
     useEffect(()=>{
         bottomRef.current?.scrollIntoView();
