@@ -28,18 +28,18 @@ export const ProjectHeader = ({projectId}: Props) =>{
                     <Button
                         variant="ghost"
                         size="sm"
-                        className="focus-visible:ring-0 hover:bg-transparent hover:opacity-75 transition-opacity  overflow-hidden p-0"
+                        className="focus-visible:ring-0 hover:bg-transparent hover:opacity-75 transition-opacity overflow-hidden p-0"
                     >
                         <Image  src="/logo.svg" alt="chill-code" width={40} height={40} className=" hidden md:block "/>
                         <span className="text-sm font-medium">{project.name}</span>
                         <ChevronDownIcon />
                     </Button>
                 </DropdownMenuTrigger>
-                <DropdownMenuContent side="bottom" align="start" className="">
+                <DropdownMenuContent side="bottom" align="start" className="w-auto">
                     <DropdownMenuItem className="" inset="" asChild>
                         <Link href="/">
                             <ChevronLeftIcon />
-                            <span>
+                            <span >
                                 Go to Dashboard
                             </span>
                         </Link>
