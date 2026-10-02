@@ -81,6 +81,7 @@ const AssistantMessage=({
                     alt="chill-code"
                     width={50}
                     height={50}
+                    className="hidden md:block rounded-full"
                 />
                 <span className="text-l font-bold">Chill-Code</span>
                 <span className="text-xs text-muted-foreground opacity-0 transition-opacity group-hover:opacity-100">
