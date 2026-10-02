@@ -60,7 +60,7 @@ const Tree = ({ item, selectedValue, onSelect, parentPath}: TreeProps) =>{
             <SidebarMenuButton 
                 tooltip=""
                 isActive={isSelected}
-                className="data-[active=true]:bg-transparent"
+                className="data-[active=true]:bg-slate-500"
                 onClick={()=> onSelect?.(currentPath)}
             >
                 <FileIcon />
