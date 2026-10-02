@@ -23,14 +23,14 @@ export const ProjectHeader = ({projectId}: Props) =>{
 
     return (
         <header className="p-2 flex justify-between items-center border-b">
-            <DropdownMenu>
+            <DropdownMenu >
                 <DropdownMenuTrigger asChild>
                     <Button
                         variant="ghost"
                         size="sm"
-                        className="focus-visible:ring-0 hover:bg-transparent hover:opacity-75 transition-opacity pl-2!"
+                        className="focus-visible:ring-0 hover:bg-transparent hover:opacity-75 transition-opacity  overflow-hidden p-0"
                     >
-                        <Image  src="/logo.svg" alt="chill-code" width={40} height={40}/>
+                        <Image  src="/logo.svg" alt="chill-code" width={40} height={40} className=" hidden md:block "/>
                         <span className="text-sm font-medium">{project.name}</span>
                         <ChevronDownIcon />
                     </Button>
