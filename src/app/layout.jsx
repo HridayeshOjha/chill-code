@@ -22,7 +22,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <ClerkProvider>
+    <ClerkProvider 
+      // appearance={{
+      //   variables: {
+      //     colorPrimary: ""
+      //   },
+      // }}
+    >
       <TRPCReactProvider>
         <html lang="en" suppressHydrationWarning>
           <body
