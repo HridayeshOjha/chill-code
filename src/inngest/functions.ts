@@ -18,6 +18,7 @@ export const codeAgentFunction = inngest.createFunction(
     async ({ event, step }) =>{
         const sandboxId= await step.run('get-sandbox-id', async ()=>{
             const sandbox= await Sandbox.create("hridayeshs-project-b6ef/chillcode-nextjs-test");
+            await sandbox.setTimeout(60_000*10*3);
             return sandbox.sandboxId;
         });
 
